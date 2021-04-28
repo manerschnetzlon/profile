@@ -1,0 +1,78 @@
+body {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  color: rgb(0, 70, 95);
+}
+
+h1 {
+  margin: auto;
+  font-family: 'Abril Fatface', cursive;
+}
+
+h4 {
+  margin-top: -20px;
+}
+
+strong {
+  font-size: larger;
+}
+
+.card {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  margin: 20px auto;
+  padding: 48px 40px 72px 40px;
+  box-shadow: 5px 5px 40px rgba(5, 62, 83, 0.5);
+  border-radius: 4px;
+}
+
+#last_card {
+  padding: auto 10px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  margin: 40px 20px 50px;
+  background-color: rgba(255, 255, 255, 0.40);
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  margin: 30px 30px 0;
+  width: 240px;
+  border: 2px dashed rgb(0, 70, 95);
+  border-radius: 50%;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  color:rgb(0, 70, 95);
+}
+
+.btn-blue {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: larger;
+  color: white;
+  background-color: rgb(8, 81, 107);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.btn-blue:hover {
+  background-color: rgb(15, 96, 126);
+}
+
+.list-inline {
+  display: inline-block;
+  padding: 0px 20px;
+  list-style: none;
+  padding-left: 0px;
+}
