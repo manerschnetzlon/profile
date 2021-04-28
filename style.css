@@ -1,3 +1,32 @@
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(-360deg); }
+}
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(-360deg); }
+}
+@keyframes spin {
+  100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); }
+}
+
 body {
   background-image: url(images/background.jpg);
   background-size: cover;
@@ -23,19 +52,19 @@ strong {
   text-align: center;
   margin: 20px auto;
   padding: 48px 40px 72px 40px;
-  box-shadow: 5px 5px 40px rgba(5, 62, 83, 0.5);
+  box-shadow: 5px 5px 40px rgba(5, 62, 83, 0.2);
   border-radius: 4px;
 }
 
 #last_card {
-  padding: auto 10px;
+  padding: 48px 40px 20px;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
   margin: 40px 20px 50px;
-  background-color: rgba(255, 255, 255, 0.40);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   border-radius: 3px;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
@@ -49,6 +78,12 @@ p {
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.4);
 }
 
+.avatar:hover {
+  -webkit-animation: spin 3.5s linear infinite;
+  -moz-animation: spin 3.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
 a {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
@@ -59,7 +94,7 @@ a {
 .btn-blue {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: larger;
+  font-size: large;
   color: white;
   background-color: rgb(8, 81, 107);
   padding: 16px;
@@ -67,7 +102,13 @@ a {
 }
 
 .btn-blue:hover {
-  background-color: rgb(15, 96, 126);
+  background-color: rgb(23, 102, 131);
+}
+
+.small {
+  width: 10px;
+  background-color: rgba(8, 81, 107, 0.7);
+  font-size: small;
 }
 
 .list-inline {
